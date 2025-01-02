@@ -1,0 +1,95 @@
+/* Resetting margins and padding for a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5c3f92; /* Darkish purple color */
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 100px; /* Small logo for mobile */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px; /* Slightly smaller font for mobile */
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+  letter-spacing: 1px;
+}
+
+.sub-title {
+  font-size: 16px; /* Smaller subtitle font */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.next-btn-container {
+  margin-top: 30px;
+}
+
+.next-btn {
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #722fb0; /* Lighter purple */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Full width for mobile buttons */
+  max-width: 200px; /* Ensures it doesn't stretch too far */
+}
+
+.next-btn:hover {
+  background-color: #9d4ec0; /* Lighter hover effect */
+  transform: scale(1.05); /* Subtle scale on hover for a cartoonish feel */
+}
+
+.next-btn:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 24px; /* Adjust title size for smaller mobile screens */
+  }
+  .sub-title {
+    font-size: 14px; /* Smaller subtitle for tight spaces */
+  }
+  .next-btn {
+    padding: 12px 20px; /* Adjust button padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 80px; /* Smaller logo for ultra-mobile view */
+  }
+  .title {
+    font-size: 22px; /* Further adjust title size */
+  }
+}
